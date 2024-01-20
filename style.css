@@ -1,0 +1,64 @@
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.lightboxImage {
+    width: 90%;
+    height: 300px;
+}
+
+.lightboxImage:hover {
+    opacity: .6;
+
+}
+
+.close {
+    color: #ffffff;
+    position: absolute;
+    top: 15px;
+    z-index: 3000;
+    right: 15px;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .lightboxImage {
+        width: 90%;
+        height: 200px;
+    }
+
+    .register-input {
+        width: 100% !important;
+    }
+}
+
+.error {
+    display: none;
+}
+
+.bg-main {
+    background-color: #f0e78c;
+}
+
+.bg-secondary {
+    background-color: #2f4f4e;
+}
+
+.registar-container {
+    height: 100vh;
+}
