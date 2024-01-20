@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container-fluid registar-container pt-5 d-flex justify-content-center bg-main">
+        <div class=" register-input w-50 mt-5">
+            <div class=" border border-1 m-3 mx-auto  shadow-lg">
+                <div class=" bg-white p-3">
+                    <h1 class="text-center ">Register</h1>
+                    <form action="home.html" method="post" id="myForm">
+                        <div>
+                            <input type="text" class="form-control rounded-0 w-100 my-2 m-auto" name="userName"
+                                placeholder="Enter your name " id="userName">
+                            <div id="errorUserName" class="error ps-3  mx-4 alert alert-danger p-0">Please enter a
+                                correct name
+                            </div>
+                        </div>
+                        <div>
+                            <input type="email" class="form-control rounded-0 my-3 " name="Email" placeholder="Email"
+                                id="userEmail">
+                            <div id="errorUserEmail" class="error ps-3  mx-4 alert alert-danger p-0">Please enter a
+                                correct Email</div>
+                        </div>
+                        <div>
+                            <input type="number" class="form-control rounded-0 my-3 " name="SSN"
+                                placeholder="National ID" id="userSSN">
+                            <div id="errorUserSSN" class="error ps-3  mx-4 alert alert-danger p-0">Please enter a
+                                correct SSN 14 digits</div>
+                        </div>
+                        <div>
+                            <!-- <input type="text" class="form-control rounded-0 my-3" name="Adress" placeholder="Adress " id="Adress"> -->
+                            <select name="Address" id="address" class="form-control rounded-0 my-3">
+                                <option value="none">--select Your City--</option>
+                                <option value="assiut">Assiut</option>
+                                <option value="alexandria">Alexandria</option>
+                                <option value="cairo">Cairo</option>
+                                <option value="al-Minya">Al-Minya</option>
+                                <option value="qena">Qena</option>
+                            </select>
+                            <div id="errorUserAddress" class="error ps-3  mx-4 alert alert-danger p-1">Please enter a
+                                correct Address</div>
+                        </div>
+                        <div>
+                            <input type="password" class="form-control rounded-0 my-3" name="Password"
+                                placeholder="Password " id="userPassword">
+                            <div id="errorUserPassword" class="error ps-3  mx-4 alert alert-danger p-0">Password is weak
+                                strong e.g[test107#rb]</div>
+                        </div>
+                        <div>
+                            <input type="password" class="form-control rounded-0 my-3" name=""
+                                placeholder="Confirm Password" id="ConfirmPassword">
+                            <div id="errorUserPasswordAndConfirm" class="error ps-3  mx-4 alert alert-danger p-0">
+                                Password , Confirm Password
+                                not match</div>
+                        </div>
+                        <input type="submit" style="background-color: #2f4f4e;"
+                            class="btn  text-white d-block  m-auto my-2" value="Register Now">
+                        <p class="text-center mt-3">Already have an Acount ? <a href="login.html">login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/validitionRegister.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
