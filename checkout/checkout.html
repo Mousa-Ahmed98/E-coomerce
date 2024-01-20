@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="checkout-style.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- <link rel="stylesheet" href="../all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Check out</title>
+</head>
+
+<body>
+    <div class="bg-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex">
+                    <div class="col-12">
+                        <a class="navbar-brand d-inline-block" href="#"><img class="image-icon-home"
+                                src="../online_shopping.png" alt="" srcset=""></a>
+                        <h1 class="d-inline-block ms-4 ">E-Commerce</h1><br>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-end m-auto ">
+                    <i class="fa-regular fs-5 fa-user "></i>
+                    <i class="fa-regular fs-5 fa-heart mx-3"></i>
+                    <i class="fa-solid   fs-5 fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg pb-3 pb-5 " style="background-color: #f0e78c;">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex w-50" role="search">
+                    <input class="form-control rounded-0  me-2 rounded rounded-5" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass m-auto  "></i>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main  class="d-flex justify-content-center px-2">
+        <section style="margin: -30px 0 ;z-index: 1;" class="border  shadow container-md container-fluid px-2 pt-5 bg-white ">
+            <div class="d-flex flex-column  align-items-start">
+                <div class="d-flex flex-row col-12 col-md-7 align-content-center my-1 border-0  rounded  p-1" style="background-color: rgb(51, 230, 243);">
+                    <pre class="d-flex m-0 p-1 fs-2 " style="color: grey;">Home    /   Shop    /   Cart    /   <span style="color: black;">Checkout</span></pre>                
+                </div>
+    
+                <div class="d-flex flex-row py-1 ">
+                    Billing Details
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+                <!-- Left side -->
+                <div class="d-flex flex-column col-8 pl-0">
+                    <div class="d-flex my-1">
+                        <div class="d-flex flex-row flex-md-column  pl-0 col-10 border-0 rounded  p-1"  style="background-color: rgb(51, 230, 243);">
+                            <p class="p-1 m-0 " >Shopping Details</p>
+                        </div>
+                    </div>
+    
+                    <div class="d-flex flex-row w-100 py-3 pl-0">
+                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                            <label for="">First Name</label>
+                            <input class="form-control" type="text" name="last_name" id="lName">
+                        </div>
+                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                            <label for="">Last Name</label>
+                            <input class="form-control " type="text" name="first_name" id="fName">
+                        </div>
+                    </div>
+    
+                    
+    
+                    <div class="d-flex flex-row py-3 pl-0">
+                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                            <label for="">Company (Optional)</label>
+                        <input class="form-control " type="text" name="" id="">
+                        </div>
+                    </div>
+    
+                    
+    
+                    <div class="d-flex flex-row py-3 pl-0">
+                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                            <label for="country">Country</label>
+                            <select class="form-control" name="country" id="country">
+                                <option value="">Egypt</option>
+                                <option value="">Saudia arabia</option>
+                                <option value="">Palestine</option>
+                                <option value="">UAE</option>
+                                <option value="">Syria</option>
+                                <option value="">Iraq</option>
+                                <option value="">Lebanon</option>
+                                <option value="">Sudan</option>
+                                <option value="">Oman</option>
+                                <option value="">Jordan</option>
+                            </select>
+                        </div>
+                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                            <label for="city">City</label>
+                            <select class="form-control" name="city" id="city">
+                                <option value="">Cairo</option>
+                                <option value="">Jeddah</option>
+                                <option value="">Jursalem</option>
+                                <option value="">Abo-Dhabi</option>
+                                <option value="">Hems</option>
+                                <option value="">Baghdad</option>
+                                <option value="">Bairut</option>
+                                <option value="">Al-khortoum</option>
+                                <option value="">Oman</option>
+                                <option value="">Amman</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="d-flex flex-row py-3 pl-0">
+                        <div class="d-flex flex-column col-10 pl-0">
+                            <label for="">Address</label>
+                            <textarea name="address" id="" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+    
+    
+                    <div class="d-flex my-1">
+                        <div class="d-flex flex-column pl-0 col-10 border-0 rounded  p-1"  style="background-color: rgb(51, 230, 243);">
+                            <p class="p-1 m-0" >Login Details</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="d-flex flex-row py-3 pl-0">
+                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                            <label for="">Email</label>
+                            <input class="form-control" type="email" name="email" id="email">
+                        </div>
+                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                            <label for="">Password</label>
+                            <input class="form-control " type="password" name="password" id="password">
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    
+                        <div class="d-flex my-1">
+                            <div class="d-flex flex-column pl-0 col-10 border-0 rounded  p-1"  style="background-color: rgb(51, 230, 243);">
+                                <p class="p-1 m-0" >Contact Details</p>
+                            </div>
+                        </div>
+    
+    
+                    <div class="d-flex flex-row py-3 pl-0">
+                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                            <label for="">Telephone</label>
+                            <input class="form-control" type="tel" name="telephone" id="telephone">
+                        </div>
+                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                            <label for="">Mobile</label>
+                            <input class="form-control" type="tel" name="mobile" id="mobile">
+                        </div>
+                    </div>
+    
+                    <div class="d-flex py-2">
+                        <div class="d-flex flex-column pl-0 border-0 rounded  p-1"  style="background-color: rgb(51, 230, 243);">
+                            <p class="p-1 m-0" >Additional Information (<span style="color:tomato;">Optional</span>)</p>
+                        </div>
+                    </div>
+                    <div class="d-flex py-2">
+                        <div class="d-flex flex-column pl-0 col-10 border-0 rounded p-1">
+                            <textarea name="additionaInformation" id="addInfo" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                    
+    
+                </div>
+    
+                <!-- Right side -->
+                <div class="d-flex flex-column col-md-4 p-0 py-1 align-items-center">
+                    <div class="d-flex w-75 rounded justify-content-start " style="background-color: blueviolet; color: white;">
+                        <p class="p-0 m-2">Order summary</p>
+                    </div>
+    
+                    <div class="d-flex flex-column p-2 w-75 rounded bg-light my-2">
+                        <div class="d-flex w-100 justify-content-between p-1 my-1">
+                            <p class="m-0">cart amount: </p>
+                            <p class="m-0">1200</p>
+                        </div>
+    
+                        <div class="d-flex w-100 justify-content-between p-1">
+                            <p class="m-0">Delivery charges: </p>
+                            <p class="m-0">100</p>
+                        </div>
+    
+    
+                        <div class="d-flex w-100 justify-content-between p-1">
+                            <p class="m-0">Less Discount @10%: </p>
+                            <p class="m-0">-13</p>
+                        </div>
+    
+                        <div class="d-flex w-100 justify-content-between p-1">
+                            <hr class="w-100" style="border: .1rem solid rgb(109, 105, 105);">
+                        </div>
+    
+                        <div class="d-flex w-100 justify-content-between p-1 py-1">
+                            <p class="m-0">Total</p>
+                            <p class="m-0">1297</p>
+                        </div>
+    
+                        <div class="d-flex w-100 justify-content-between p-1">
+                            <hr class="w-100" style="border: .1rem solid rgb(109, 105, 105);">
+                        </div>
+    
+                        <div class="d-flex w-100 p-1 px-3">
+                            <input class="" type="radio" name="cach" id="cach">
+                            <label class="m-0 mx-2" for="cach">Cach on delivery</label>
+                        </div>
+    
+                        <div class="d-flex w-100 p-1 px-3">
+                            <input class="" type="radio" name="easyPay" id="easyPay">
+                            <label class="m-0 mx-2" for="easyPay">Easy pay account</label>
+                        </div>
+                        <div class="d-flex w-100 p-1 px-3">
+                            <input class="" type="radio" name="bank" id="bank">
+                            <label class="m-0 mx-2" for="bank">Bank transferred</label>
+                        </div>
+    
+                        <div class="d-flex w-100 p-1 px-3">
+                            <button class="btn btn-success my-2 w-100">Place order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer class="text-center text-lg-start  text-muted  " style="background-color: #2f4f4e;">
+
+        <section class=" pt-5" style="color: aliceblue;">
+            <div class="container text-center text-md-start ">
+
+                <div class="row ">
+
+                    <div class="col-6 col-lg-3 mx-auto  m-4 pt-3" style="background-color: #2f4f4e; ">
+
+                        <h6 class="text-uppercase   fw-bold mb-4">
+                            important links
+                        </h6>
+                        <hr>
+                        <p>
+                            <a href="#!" class="text-reset">About</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Refund Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Terms & conditions</a>
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-3 mx-auto  m-4 pt-3" style="background-color: #2f4f4e; ">
+
+                        <h6 class="text-uppercase   fw-bold mb-4">
+                            Information
+                        </h6>
+                        <hr>
+                        <p>
+                            <a href="#!" class="text-reset">My Account</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">my Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Cart</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Checkout</a>
+                        </p>
+                    </div>
+                    <div class="col-6 col-lg-3 mx-auto m-4 pt-3" style="background-color: #2f4f4e; ">
+
+                        <h6 class="text-uppercase   fw-bold mb-4">
+                            follow Us
+                        </h6>
+                        <div>
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="me-4 text-reset">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="subscribe mt-3">
+                            <h4>Subscribe for NewSletter</h4>
+                            <hr>
+                            <input class="form-control rounded-0  me-2 rounded rounded-5" placeholder="Email" aria-label="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center text-white p-4" style="background-color: #f110100d;">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">E-Commerce.com</a>
+        </div>
+
+    </footer>
+
+     <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+     <script src="js/jquery-3.7.1.js"></script>
+   
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
