@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="checkout-style.css"> -->
+    
+    
     <link rel="stylesheet" href="../style.css">
-    <!-- <link rel="stylesheet" href="../all.css"> -->
+    
+    <link rel="stylesheet" href="../Abdallah/css/all.css">
+    <link rel="stylesheet" href="../Abdallah/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../Abdallah/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Check out</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+
+    </script>
 </head>
 
 <body>
@@ -56,7 +65,7 @@
                 </ul>
                 <form class="d-flex w-50" role="search">
                     <input class="form-control rounded-0  me-2 rounded rounded-5" type="search" placeholder="Search"
-                        aria-label="Search">
+                        aria-label="Search" id="">
                     <i class="fa-solid fa-magnifying-glass m-auto  "></i>
 
                 </form>
@@ -66,8 +75,8 @@
     <main  class="d-flex justify-content-center px-2">
         <section style="margin: -30px 0 ;z-index: 1;" class="border  shadow container-md container-fluid px-2 pt-5 bg-white ">
             <div class="d-flex flex-column  align-items-start">
-                <div class="d-flex flex-row col-12 col-md-7 align-content-center my-1 border-0  rounded  p-1" style="background-color: rgb(51, 230, 243);">
-                    <pre class="d-flex m-0 p-1 fs-2 " style="color: grey;">Home    /   Shop    /   Cart    /   <span style="color: black;">Checkout</span></pre>                
+                <div class="d-flex flex-row col-12 col-md-7 align-content-center my-1 border-0  rounded  p-1 bg-main">
+                    <pre class="d-flex m-0 p-1 " style="color: grey;">Home    /   Shop    /   Cart    /   <span style="color: black;">Checkout</span></pre>                
                 </div>
     
                 <div class="d-flex flex-row py-1 ">
@@ -76,37 +85,43 @@
             </div>
             <div class="d-flex flex-column flex-md-row">
                 <!-- Left side -->
-                <div class="d-flex flex-column col-8 pl-0">
+                <div class="d-flex flex-column col-8 ps-0">
                     <div class="d-flex my-1">
-                        <div class="d-flex flex-row flex-md-column  pl-0 col-10 border-0 rounded  p-1"  style="background-color: rgb(51, 230, 243);">
+                        <div class="d-flex flex-row flex-md-column  ps-0 col-10 border-0 rounded  p-1 bg-main" >
                             <p class="p-1 m-0 " >Shopping Details</p>
                         </div>
                     </div>
     
-                    <div class="d-flex flex-row w-100 py-3 pl-0">
-                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                    <div class="d-flex flex-row w-100 py-3 ps-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0">
                             <label for="">First Name</label>
-                            <input class="form-control" type="text" name="last_name" id="lName">
+                            <input class="form-control" type="text" name="last_name" id="fName">
                         </div>
-                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0 ms-1">
                             <label for="">Last Name</label>
-                            <input class="form-control " type="text" name="first_name" id="fName">
+                            <input class="form-control" type="text" name="first_name" id="lName">
                         </div>
                     </div>
     
-                    
+                    <div class="d-flex flex-row w-100 p-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0">
+                            <div class="alert alert-danger p-2" role="alert" id="fNameAlert">
+                                First name is mandatory
+                              </div>
+                        </div>
+                    </div>
     
-                    <div class="d-flex flex-row py-3 pl-0">
-                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                    <div class="d-flex flex-row py-3 ps-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0">
                             <label for="">Company (Optional)</label>
-                        <input class="form-control " type="text" name="" id="">
+                        <input class="form-control " type="text" name="company" id="company">
                         </div>
                     </div>
     
                     
     
-                    <div class="d-flex flex-row py-3 pl-0">
-                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                    <div class="d-flex flex-row py-3 ps-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0">
                             <label for="country">Country</label>
                             <select class="form-control" name="country" id="country">
                                 <option value="">Egypt</option>
@@ -121,7 +136,7 @@
                                 <option value="">Jordan</option>
                             </select>
                         </div>
-                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                        <div class="d-flex flex-column col-md-5 col-9 p-0 ms-1">
                             <label for="city">City</label>
                             <select class="form-control" name="city" id="city">
                                 <option value="">Cairo</option>
@@ -138,62 +153,84 @@
                         </div>
                     </div>
     
-                    <div class="d-flex flex-row py-3 pl-0">
-                        <div class="d-flex flex-column col-10 pl-0">
+                    <div class="d-flex flex-row py-3 ps-0">
+                        <div class="d-flex flex-column col-10 ps-0">
                             <label for="">Address</label>
-                            <textarea name="address" id="" cols="30" rows="5"></textarea>
+                            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row w-100 p-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0">
+                            <div class="alert alert-danger p-2" role="alert" id="addressAlert">
+                                Address is mandatory
+                              </div>
                         </div>
                     </div>
     
     
                     <div class="d-flex my-1">
-                        <div class="d-flex flex-column pl-0 col-10 border-0 rounded  p-1"  style="background-color: rgb(51, 230, 243);">
+                        <div class="d-flex flex-column ps-0 col-10 border-0 rounded  p-1 bg-main">
                             <p class="p-1 m-0" >Login Details</p>
                         </div>
                     </div>
     
     
-                    <div class="d-flex flex-row py-3 pl-0">
-                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                    <div class="d-flex flex-row py-3 ps-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0">
                             <label for="">Email</label>
                             <input class="form-control" type="email" name="email" id="email">
                         </div>
-                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0 ms-1">
                             <label for="">Password</label>
-                            <input class="form-control " type="password" name="password" id="password">
+                            <input class="form-control" type="password" name="password" id="password">
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row w-100 p-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0">
+                            <div class="alert alert-danger p-2" role="alert" id="emailAlert">
+                                Email is mandatory
+                              </div>
                         </div>
                     </div>
     
     
-    
-    
                     
                         <div class="d-flex my-1">
-                            <div class="d-flex flex-column pl-0 col-10 border-0 rounded  p-1"  style="background-color: rgb(51, 230, 243);">
+                            <div class="d-flex flex-column ps-0 col-10 border-0 rounded  p-1 bg-main">
                                 <p class="p-1 m-0" >Contact Details</p>
                             </div>
                         </div>
     
     
-                    <div class="d-flex flex-row py-3 pl-0">
-                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                    <div class="d-flex flex-row py-3 ps-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0">
                             <label for="">Telephone</label>
                             <input class="form-control" type="tel" name="telephone" id="telephone">
                         </div>
-                        <div class="d-flex flex-column col-md-5 col-9 pl-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0 ms-1">
                             <label for="">Mobile</label>
                             <input class="form-control" type="tel" name="mobile" id="mobile">
                         </div>
                     </div>
+
+                    <div class="d-flex flex-row w-100 p-0">
+                        <div class="d-flex flex-column col-md-5 col-9 ps-0">
+                            <div class="alert alert-danger p-2" role="alert" id="telephoneAlert">
+                                Telephone is mandatory
+                              </div>
+                        </div>
+                    </div>
     
                     <div class="d-flex py-2">
-                        <div class="d-flex flex-column pl-0 border-0 rounded  p-1"  style="background-color: rgb(51, 230, 243);">
+                        <div class="d-flex flex-column ps-0 border-0 rounded  p-1 bg-main">
                             <p class="p-1 m-0" >Additional Information (<span style="color:tomato;">Optional</span>)</p>
                         </div>
                     </div>
                     <div class="d-flex py-2">
-                        <div class="d-flex flex-column pl-0 col-10 border-0 rounded p-1">
-                            <textarea name="additionaInformation" id="addInfo" cols="30" rows="5"></textarea>
+                        <div class="d-flex flex-column ps-0 col-10 border-0 rounded p-1">
+                            <textarea name="additionaInformation" id="additionalInformation" cols="30" rows="5"></textarea>
                         </div>
                     </div>
                     
@@ -242,16 +279,16 @@
                         </div>
     
                         <div class="d-flex w-100 p-1 px-3">
-                            <input class="" type="radio" name="easyPay" id="easyPay">
+                            <input class="" type="radio" name="cach" id="easyPay">
                             <label class="m-0 mx-2" for="easyPay">Easy pay account</label>
                         </div>
                         <div class="d-flex w-100 p-1 px-3">
-                            <input class="" type="radio" name="bank" id="bank">
+                            <input class="" type="radio" name="cach" id="bank">
                             <label class="m-0 mx-2" for="bank">Bank transferred</label>
                         </div>
     
                         <div class="d-flex w-100 p-1 px-3">
-                            <button class="btn btn-success my-2 w-100">Place order</button>
+                            <button class="btn btn-success my-2 w-100" id="placeOrder">Place order</button>
                         </div>
                     </div>
                 </div>
@@ -353,6 +390,7 @@
    
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="coding.js"></script>
 </body>
 </html>
 
