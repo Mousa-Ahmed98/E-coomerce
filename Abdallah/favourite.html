@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change password</title>
+    <title>User Profile</title>
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -23,9 +23,9 @@
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end m-auto ">
-                    <i class="fa-regular fs-5 fa-user "></i>
-                    <i class="fa-regular fs-5 fa-heart mx-3"></i>
-                    <i class="fa-solid   fs-5 fa-cart-shopping"></i>
+                    <a href="UserProfile.html"><i class="fa-regular fs-5 fa-user "></i></a>
+                    <a href="favourite.html"><i class="fa-regular fs-5 fa-heart mx-3"></i></a>
+                    <a href="../Abdallah/favourite.html"> <i class="fa-solid   fs-5 fa-cart-shopping"></i></a>
                 </div>
             </div>
         </div>
@@ -42,10 +42,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../home-page/home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Shop</a>
+                        <a class="nav-link " href="../products screen/Shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#">About</a>
@@ -55,8 +55,8 @@
                     </li>
                 </ul>
                 <form class="d-flex w-50" role="search">
-                    <input class="form-control rounded-0 rounded-0  me-2 rounded rounded-5" type="search"
-                        placeholder="Search" aria-label="Search">
+                    <input class="form-control rounded-0  me-2 rounded rounded-5" type="search" placeholder="Search"
+                        aria-label="Search">
                     <i class="fa-solid fa-magnifying-glass m-auto  "></i>
 
                 </form>
@@ -65,72 +65,14 @@
     </nav>
     <main class="d-flex justify-content-center px-2">
         <section style="margin: -30px 0 ;z-index: 1;"
-            class="border  shadow container-md container-fluid pt-5 bg-white ">
-            <div class="  d-flex  row justify-content-center ">
-                <div class="px-0 col-12 col-md-4  d-flex justify-content-sm-start flex-column"
-                    style="height: fit-content !important;">
-                    <div class="  w-75 px-5  mx-auto  position-relative" style="height: 30%;">
-                        <img id="profileImage" class="shadow rounded-circle img-fluid  mx-auto h-100 w-auto"
-                            src="images/man1.jpg" alt="">
-                    </div>
-                    <h3 id="fullName" class="text-center mb-2"></h3>
-                    <div id="list-example" class="list-group rounded-0 mb-2 px-0 mx-auto w-75">
-                        <a class="list-group-item list-group-item-action border border-0 fs-4 py-1 d-block "
-                            href="UserProfile.html">
-                            Profile
-                        </a>
-                        <a class="list-group-item list-group-item-action border border-0 fs-4 py-1 d-block bg-primary-subtle"
-                            href="ChangePassword.html">
-                            Change password
-                        </a>
-                        <!-- <a class="list-group-item list-group-item-action border border-0 fs-4 py-1 d-block" href="#">
-                            My Orders
-                        </a> -->
-                    </div>
+            class="border  shadow container-md container-fluid pt-4 bg-white ">
+            <div class="pages  p-2 mb-3" style="background-color: #f0e78c;">
+                Home / Favourite
+            </div>
 
-                </div>
-                <div class="col-12 col-md-8 pt-0  p-3 mt-0">
-                    <div class="pe-5 pt-3 d-flex flex-column justify-content-center">
-                        <div id="changedSuccessfully" class="error alert alert-success p-2">
-                            The password has been changed successfully
-                        </div>
-                        <div class="row my-2 my-md-3">
-                            <div class="my-2 my-md-3">
-                                <label for="">Old Password</label>
-                                <input id="oldPassword" type="password" class="form-control rounded-0"
-                                    name="oldPassword">
-                                <div id="errorOldPassword" class="error ps-3 mt-2  alert alert-danger p-0">
-                                    Password is incorrect
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <label class="mt-2" for="">New Password</label>
-                                <input id="newPassword" type="password" class="form-control rounded-0 "
-                                    name="newPassword">
-                                <div id="errorUserPassword" class="error mt-2 ps-3  alert alert-danger p-0">Password is
-                                    weak
-                                    strong e.g[test107#rb]</div>
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <label class="mt-2" for="">Confirm New Password</label>
-                                <input id="confirmNewPassword" type="password" class="form-control rounded-0"
-                                    name="rNewPassword">
-                                <div id="errorUserPasswordAndConfirm" class="error ps-3  mt-2 alert alert-danger p-0">
-                                    New Password, Confirm New Passwordnot match</div>
-                            </div>
-                            <p id="errorNotEnterNewPassword" class="error  text-center text-danger mt-4 fs-4">Please
-                                Enter New
-                                Password</p>
-                        </div>
-                        <div>
-                            <p style="text-align: end;"><a href="forgotPassword.html">Forgot Password?</a></p>
-                        </div>
-                        <div class="">
-                            <button id="btnChangePassword" class="btn bg-secondary  d-block w-100 fs-3 ">Change
-                                Password</button>
-                        </div>
-                    </div>
-                </div>
+            <div id="containerFavourite" class="d-flex row col-12  ps-3 justify-content-center ">
+                
+             
             </div>
         </section>
 
@@ -209,7 +151,7 @@
                         <div class="subscribe mt-3">
                             <h4>Subscribe for NewSletter</h4>
                             <hr>
-                            <input class="form-control rounded-0 rounded-0  me-2 rounded rounded-5" placeholder="Email"
+                            <input class="form-control rounded-0  me-2 rounded rounded-5" placeholder="Email"
                                 aria-label="Search">
                         </div>
                     </div>
@@ -226,7 +168,7 @@
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
     <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/ChangePassowrd.js"></script>
+    <script src="js/favourite.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
