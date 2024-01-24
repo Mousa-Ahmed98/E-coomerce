@@ -1,5 +1,6 @@
 a {
     text-decoration: none;
+    color: #2f4f4e;
 }
 
 * {
@@ -45,6 +46,9 @@ a {
     .register-input {
         width: 100% !important;
     }
+    .p-ellipsis {
+        display: none!important;
+    }
 }
 
 .error {
@@ -61,4 +65,13 @@ a {
 
 .registar-container {
     height: 100vh;
+}
+
+.p-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3; /* Adjust the number of lines you want to show */
+    /* max-height: 70px;  */
 }
