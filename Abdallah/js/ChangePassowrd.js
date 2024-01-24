@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     getCurrentUserFromLocalStorage();
     $("#fullName").html(resultOfOldData[keyOfCurrentUser].name);
-    $("#imageInChangePassword").attr("src", resultOfOldData[keyOfCurrentUser].image);
+    $("#profileImage").attr("src", resultOfOldData[keyOfCurrentUser].image);
 
     console.log(oldPasswordFromLocalStorage);
 
