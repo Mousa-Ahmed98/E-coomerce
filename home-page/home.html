@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../Abdallah/css/style.css">
 
     <title>Home</title>
-    
+
 
     <style>
         .textandsignal,
@@ -58,7 +58,7 @@
 
         .product-card img {
             width: 100%;
-            height: 15em;
+            /* height: 15em; */
             object-fit: cover;
         }
 
@@ -190,6 +190,17 @@
             }
 
         }
+        #products {
+    position: relative;
+}
+
+        .card-img-top {
+
+            height: 200px !important;
+            overflow: hidden !important;
+            object-fit: cover;
+
+        }
 
         @media (max-width: 576px) {
 
@@ -297,7 +308,7 @@
                         <img class="signal" src="images/signal.png" alt="image of signal">
                     </div>
                     <div class="container">
-                        <div class="row ">
+                        <div class="row  " id="products">
                             <!-- Card 1 -->
                             <div class="col-md-3">
                                 <div class="card product-card ">
@@ -587,6 +598,7 @@
             </div>
 
         </footer>
+        <script src="js/home.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
