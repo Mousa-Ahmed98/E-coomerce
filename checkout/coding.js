@@ -39,6 +39,23 @@ $(document).ready(function () {
             alert("Wrong password");
         }
 
+
+        let wrappedOrder = {
+            order: JSON.parse(localStorage.getItem("orders")),
+            name: fName + " "+lName,
+            company: company,
+            country: country,
+            city:city,
+            address: address,
+            email: email,
+            telephone: telephone,
+            mobile: mobile,
+            additionalInformation: additionalInformation,
+        }
+
+        localStorage.removeItem("order");
+        localStorage.setItem("wrappedItem", JSON.stringify(wrappedOrder));
+
     })
 });
 
