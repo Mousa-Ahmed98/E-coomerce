@@ -75,3 +75,6 @@ a {
     -webkit-line-clamp: 3; /* Adjust the number of lines you want to show */
     /* max-height: 70px;  */
 }
+.login{
+    display: none;
+}
