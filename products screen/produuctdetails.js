@@ -104,6 +104,14 @@ function addToCard(id) {
   }
   var product = { productId: id, quantity: 1 };
 
+  let isFound = false;
+  for(o of order){
+    if(product.productId == o["productId"]){
+      o["quantity"] += 1;
+      isFound = true;
+    }
+  }
+  if(!isFound)
   order.push(product);
   localStorage.setItem("orders", JSON.stringify(order));
 }
