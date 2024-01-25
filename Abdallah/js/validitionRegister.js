@@ -139,7 +139,7 @@ $(document).ready(function() {
         } else {
             var isSaved = saveInformationToLocalStorage();
             if (isSaved) {
-                window.location.href = "home.html";
+                window.location.href = "../home-page/home.html";
             }
         }
     });
